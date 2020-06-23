@@ -1,0 +1,364 @@
+@media ( min-width: 900px ) {
+   
+    .carrinho {
+        display: inline;
+    }
+    .carrinho img{
+        width: 80px;
+    }
+    .cars12 h1{
+            color: #022235;
+    }
+
+    
+#error404{
+ 
+    top: 20px;
+    height: 500px;
+}
+#error404 h2{
+ 
+    display: flex;
+    justify-content: center;
+    top: 20px;
+   
+}
+#alerta{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+    .x {
+    color: pink;
+}
+.Main {
+    padding-top: 80000px;
+}
+.texto{
+    width: 500px;
+}
+#imglogo{
+    position: absolute;
+    left: 270%;
+}
+.search {
+    padding-top: 15px;
+    
+
+    width: 1;
+}
+.search button {
+    width: 50px;
+
+ margin-top: -24%;
+ margin-left: 210px;
+    padding: 8px 60px 4px 5px;
+    
+}
+.menuH {
+    padding-top: 10px;
+}
+.search img{
+    position: absolute;
+    height: 50px;
+    left:900px;
+    top:-10%;
+    
+}
+.jumbotron{
+    margin-top: 20px;
+  
+    background-size: 1250px
+}
+#local{
+    height: 25px;
+}
+.footer h6{
+    padding-top: 6px;
+    float: right;
+}
+.imgProduct img{
+    border-width: 5px;
+    border: 5px solid #fdddca ;
+    border-radius: 2em;
+    height: 500px;
+    width: 500px;
+}
+.imgProduct h2{
+    text-align: center;
+}
+.txtProduct{
+    width: 600px;
+    text-align: center;
+    vertical-align: middle;
+    right: 0px;
+    vertical-align: top;
+}
+#descricao {
+    padding: 30px;
+    font-size: 20px;
+}
+#descricao div{
+    padding: 30px;
+   
+    color: #fdddca;
+}
+.jumbotron h1 {
+    font-size: 55px;
+}
+.contato iframe {
+    width:100%; height:50%;border:0;
+}
+.contato iframe {
+    width:100%; height:50%;border:0;
+}
+.contato ul li img{
+    width: 50px;
+    margin: 5px 20px 5px;
+    
+}
+.contato ul li{
+    display: inline-block;
+   
+}
+
+form{ 
+    color:#022235;
+}
+.about-wrapper {
+    height: 19em;
+    width: 100%;
+    background-color: #022235;
+    display: inline-block; 
+}
+
+ .about-wrapper img {
+     width: 200px;
+     position: absolute;
+     right: -200px ;
+     top: 75px
+     
+ }
+ .about-text {
+     font-size: 17px;
+    position: relative;
+    width: 50em;
+    height: 20em;
+    color: #fdddca;
+  
+ }
+ .show2 {
+    position: absolute;
+    left: -30em;
+    width: 60em;
+    height: 20em;
+    -webkit-animation: slide-in 1s forwards;
+    animation: slide-in 1s forwards; 
+ }
+ @-webkit-keyframes slide-in {
+   100% { left: 0 }
+ }
+ @keyframes slide-in {
+   100% { left: 0 }
+ }
+ .cards {
+     margin-right: 10px;
+     top: 200px;
+     margin-left: 10px;
+     z-index: inherit;
+     
+ }
+ .cards Card {
+     height: 200px;
+    padding-left: 50px;
+    margin-left: 10px;
+    z-index: inherit;
+}
+#cardpag button{
+    position: absolute;
+    top:470px;
+    right:10px
+}
+#cardpag {
+    height: 520px;
+    border-radius: 5px;
+}
+#textocard{
+    height: 140px;
+    overflow: hidden;
+}
+.pagbutao{
+    margin-left: 20px;
+}
+#mediatext{
+    width: 900px;
+    font-size: 15pt;
+    margin-left: 10px;
+    height: 100px;
+    overflow: hidden;
+}
+}
+/*daqui pra baixo as configuracoes css sao para dispositivos abaixo de 900px*/
+@media(max-width: 900px){
+.x {
+    color: pink;
+}
+.Main {
+    padding-top: 80000px;
+}
+.texto{
+    width: 500px;
+}
+
+.search {
+    padding-top: 15px;
+    display: flex;
+    justify-items: center;
+    
+    width: 100vw;
+  
+}
+.botaosearch {
+    position: absolute;
+    padding-top: 40px;
+    margin-top: 0px;
+    
+}
+#imglogo{
+    position: absolute;
+    left: -40%;
+    top: 40px
+}
+.menuH {
+    padding-top: 10px;
+}
+.search img{
+    height: 50px;
+    
+    margin-left: 255px;
+    margin-top: 10px;
+}
+.jumbotron{
+    background-image: url(./imgPgInicial.png);
+    background-size: 1250px
+}
+#local{
+    height: 25px;
+}
+.footer h6{
+    padding-top: 6px;
+    float: right;
+}
+#textocard{
+    height: 50px;
+    overflow: hidden;
+}
+.imgProduct img{
+    border-width: 5px;
+    border: 5px solid #fdddca ;
+    border-radius: 2em;
+    width: 50%;
+}
+.imgProduct h2{
+    text-align: center;
+}
+.txtProduct{
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    right: 0px;
+    vertical-align: top;
+    font-size: 1px;
+}
+#descricao {
+    padding: 1px;
+    font-size: 20px;
+}
+#descricao div{
+    padding: 30px;
+   
+    color: #fdddca;
+}
+.jumbotron h1 {
+    font-size: 25px;
+}
+.contato iframe {
+    width:100%; height:50%;border:0;
+}
+.contato ul li img{
+    width: 40px;
+    margin: 5px 20px 5px;
+   
+}
+.contato ul li{
+    display: inline-block;
+   
+}
+
+.about-wrapper img {
+    width: 0px;
+    position: absolute;
+    right: -200px ;
+    top: 75px
+    
+}
+.about-wrapper {
+    height: 30em;
+    width: 100%;
+    background-color: #022235;
+ }
+ 
+ 
+ .about-text {
+   
+    position: relative;
+    width: 20em;
+    height: 20em;
+    color: #fdddca;
+ }
+ .show2 {
+    position: absolute;
+    left: -30em;
+    width: 23em;
+    height: 20em;
+    -webkit-animation: slide-in 1s forwards;
+    animation: slide-in 1s forwards;
+ }
+ @-webkit-keyframes slide-in {
+   100% { left: 0 }
+ }
+ @keyframes slide-in {
+   100% { left: 0 }
+ }
+ #alerta{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+#modeloimg{
+    position: relative;
+    width: 60px ;
+    top: 2px;
+    left: 2px;
+}
+#mediatext{
+    width: 150px;
+    font-size: 15pt;
+    margin-left: 10px;
+    height: 80px;
+    overflow: hidden;
+}
+#preco{
+    font-size: 15pt;
+}
+.pagbutao{
+    margin-left: 20px;
+}
+#error404 h2{
+ 
+    display: flex;
+    justify-content: center;
+    top: 20px;
+    color: #022235;
+}
+}
