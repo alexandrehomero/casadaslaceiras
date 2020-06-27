@@ -23,7 +23,7 @@ const Example = (props) => {
           {/*preciso que ative uma alerta no botstrap com todos os itens no carrinho, dentro desse alerta um botao para pagamento*/}
          <div>   <FormGroup>
         <Label for="exampleSelect">Quantidade:</Label>
-        <input type="number">
+        <input type="number"  min="0">
          
         </input>
       </FormGroup> <CardLink href="#" style={{color: "green"}}>Adicionar ao carrinho</CardLink> <br/> Calcule seu frete <label>CEP:</label><Input type="search" name="email" id="search" placeholder="CEP" /><Button className="btn btn-success">Verificar</Button></div>
