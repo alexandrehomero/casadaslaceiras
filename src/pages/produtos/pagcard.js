@@ -27,7 +27,7 @@ const Pagcard = (props) => {
           <CardTitle>Card title</CardTitle>
           <CardSubtitle>Card subtitle</CardSubtitle>
           <CardText id="textocard">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-          <Button style={{backgroundColor: "pink", borderColor: "pink"}}>Ver produto</Button>
+          <Button style={{backgroundColor: "pink", borderColor: "pink"}}><a href="/produto1">Ver produto</a></Button>
         </CardBody>
       </Card>
       <Card>
