@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import carrinho from "./imagens/carrinho.png";
-import logo from './imagens/LOGO-CASA.png';
+import carrinho from "../imagens/carrinho.png";
+import logo from '../imagens/LOGO-CASA.png';
+import './headers.css';
+import LoginTips from './loginNoHeader';
 import {
   Alert,
   Collapse,
@@ -22,7 +24,7 @@ import {
   Input,
   FormGroup
 } from 'reactstrap';
-import Alerta from './Alerta'
+import Alerta from '../Alerta'
 import { Link } from 'react-router-dom';
 import { render } from '@testing-library/react';
 const Headers = (props) => {
@@ -44,21 +46,15 @@ const Headers = (props) => {
 
     <div className="search container "><Col md={2}>
     {handleClick}
+    <div className="cadastro-header container">
+   <LoginTips id="logintips"/>
+    </div>
     
-    <Form inline>
-      <FormGroup>
-        <Label for="exampleEmail" hidden></Label>
-        <Input type="search" name="email" id="search" placeholder="busque" />
-       <a href="/carrinho"> <img src={carrinho}/></a>
-      </FormGroup>
-     
-      <div className="botaosearch"><Button style={{backgroundColor: "pink", border:"pink"}}>Buscar</Button></div>
-     <a href="/"><img id="imglogo" src={logo}></img></a>
-    </Form>
       
-        </Col></div><div className="menuH">
-      <Navbar light expand="md" style={{backgroundColor: "pink"}}>
-        <NavbarBrand href="/" style={{color: "white"}}>Página inicial</NavbarBrand>
+        </Col></div><div className="menuH " style={{backgroundColor: "pink"}}>
+      <Navbar light expand="md" style={{backgroundColor: "pink"}} className="container">
+        <NavbarBrand href="/" style={{color: "white"}}><img id="logoinicial" src={logo}></img></NavbarBrand>
+        <div className="components-header-desktop">
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
@@ -95,6 +91,7 @@ const Headers = (props) => {
           {/* acione o alerta com os forms de login ao apertar o botao cadastro*/}
           <Button color="light" onClick={handleClick}>Cadastro</Button>{' '}
         </Collapse>
+        </div>
       </Navbar>
      
       

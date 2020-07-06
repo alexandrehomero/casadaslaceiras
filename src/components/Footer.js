@@ -1,6 +1,6 @@
 import React from 'react';
 import { Table } from 'reactstrap';
-import local from "./imagens/local.png"
+import local from "../imagens/local.png"
 const Footer = (props) => {
   return (
    <div><br/>

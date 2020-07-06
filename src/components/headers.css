@@ -1,0 +1,20 @@
+@media ( max-width: 900px ) {
+#logoinicial{
+    width: 100px;
+}
+.cadastro-header{
+    display: inline-block;
+    width: 100%;
+}
+#logintips{
+    
+}
+}
+@media ( min-width: 900px ) {
+    #logoinicial{
+        width: 100px;
+    }
+    .cadastro-header{
+        display: inline-block;
+    }
+    }
