@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import carrinho from "../imagens/carrinho.png";
+import { SearchOutlined} from '@ant-design/icons';
 import logo from '../imagens/LOGO-CASA.png';
 import './headers.css';
 import LoginTips from './loginNoHeader';
@@ -15,6 +15,7 @@ import {
   Nav,
   NavItem,
   NavLink,
+  NavbarText,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
@@ -49,49 +50,42 @@ const Headers = (props) => {
     <div className="cadastro-header container">
    <LoginTips id="logintips"/>
     </div>
-    
+   
       
         </Col></div><div className="menuH " style={{backgroundColor: "pink"}}>
-      <Navbar light expand="md" style={{backgroundColor: "pink"}} className="container">
-        <NavbarBrand href="/" style={{color: "white"}}><img id="logoinicial" src={logo}></img></NavbarBrand>
-        <div className="components-header-desktop">
+        <Navbar color="pink" light expand="md">
+        <NavbarBrand href="/"><img id="logoinicial" src={logo}/></NavbarBrand>
+        <Form><Input type="search" placeholder="pesquisar"> </Input><SearchOutlined id="logosearch" type="submit"/></Form>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/contato">Contato</NavLink>
+              <NavLink href="/components/">Components</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/sobre-empresa">Quem somos nós</NavLink>
+              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
-                Nossos produtos
+                Options
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                <NavLink href="/pagina1">produto1</NavLink>
+                  Option 1
                 </DropdownItem>
                 <DropdownItem>
                   Option 2
                 </DropdownItem>
-                <DropdownItem>
-                  Option 3
-                </DropdownItem>
-                <DropdownItem>
-                  Option 4
-                </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>
-                  
+                  Reset
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          {/* acione o alerta com os forms de login ao apertar o botao cadastro*/}
-          <Button color="light" onClick={handleClick}>Cadastro</Button>{' '}
+         
         </Collapse>
-        </div>
+        
       </Navbar>
      
       

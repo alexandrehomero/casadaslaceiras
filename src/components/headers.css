@@ -2,15 +2,22 @@
 #logoinicial{
     width: 100px;
 }
-.cadastro-header{
-    display: inline-block;
-    width: 100%;
+
+#logosearch{
+    position: absolute;
+    top: 25px;
+    margin-right: 0px;
 }
 #logintips{
     
 }
 }
 @media ( min-width: 900px ) {
+    #logosearch{
+        position: absolute;
+        top: 25px;
+        left: 320px;
+    }
     #logoinicial{
         width: 100px;
     }
